@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Counterstrike Scam Calculator </title>
+        <style>
+            .button {
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+    
+            .button1 {
+                background-color: red;
+            }
+    
+            .center {
+                max-width: fit-content;
+                margin-inline: auto;
+                text-align: center;
+            }
+    
+            .buttonCenter {
+                margin: auto;
+                width: 50%;
+                border: 3px solid;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    
+    <body class="center">
+        <main>
+            <h1>
+                Money to Case Calculator
+            </h1>
+        </main>
+        <form onsubmit="return processForm()">
+            <label for="moneyInput"> How much money do you want to waste? </label><br>
+            <input type="number" id="moneyInput" name="moneyInput" min="0" step="0.01"><br>
+    
+            <label for="casePrice"> How much does the case cost? </label><br>
+            <input type="number" id="casePrice" name="casePrice" min="0" step="0.01"><br>
+            <button class="button button1">Calculate... </button>
+        </form>
+        <a href="Main_Menu.html">
+            <button>Back to main menu</button>
+        </a>
+        <script src="Money_Case.js"></script>
+    </body>
+</html>
