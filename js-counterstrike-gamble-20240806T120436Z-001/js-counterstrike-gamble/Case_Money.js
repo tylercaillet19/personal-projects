@@ -10,7 +10,12 @@ function processForm() {
         return finalMath / 10000;
     }
 
-    document.write((caseNum / 100) + ' cases will cost you $' + caseCalc(caseNum, caseMath).toFixed(2) + '    ');
+    if (caseCalc(caseNum, caseMath) > 0) {
+        document.write((caseNum / 100) + ' cases will cost you $' + caseCalc(caseNum, caseMath).toFixed(2) + '    ');
+    } else [
+        document.write((caseNum / 100) + ' cases will cost you $' + caseCalc(caseNum, caseMath).toFixed(2) + ' ... fucking obviously ' + '    ')
+    ]
+    
 
     const resetButton = document.createElement('button');
     resetButton.textContent = "Go again... (please stop wasting your money on counter strike)";
